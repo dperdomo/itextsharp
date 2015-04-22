@@ -396,7 +396,7 @@ namespace iTextSharp.text.pdf {
             int c = 0;
             for (int k = 0; k < tLen; ++k) {
                 c = text[k];
-                if (c > 127 && c != FNC1)
+                if (c > 127)
                     throw new ArgumentException(MessageLocalization.GetComposedMessage("there.are.illegal.characters.for.barcode.128.in.1", text));
             }
             c = text[0];
